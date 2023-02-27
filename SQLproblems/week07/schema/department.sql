@@ -1,0 +1,20 @@
+USE [shoop]
+GO
+
+/****** Object:  Table [dbo].[department]    Script Date: 2/27/2023 1:18:49 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[department](
+	[id] [int] NOT NULL,
+	[name] [varchar](30) NULL,
+ CONSTRAINT [PK_department] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
